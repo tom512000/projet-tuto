@@ -1,0 +1,35 @@
+h1.titre{
+    text-align: center;
+}
+
+/* Sommaire */
+
+.sommaire {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%; /* Prend toute la hauteur de la fenêtre */
+    width: 200px; /* Largeur de la barre de sommaire */
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    overflow-y: auto; /* Ajoute une barre de défilement si nécessaire */
+}
+
+.sommaire ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sommaire li {
+    margin-bottom: 5px;
+}
+
+.sommaire a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sommaire a:hover {
+    color: #555;
+}
