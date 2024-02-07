@@ -1,5 +1,38 @@
-h1.titre{
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+/*
+    font-family: 'Lexend', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+*/
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+div.sommaire {
+    width: 15%;
+    height: 100%;
+}
+
+div.main {
+    width: 85%;
+    height: 100%;
+}
+
+
+header > h1 {
     text-align: center;
+    font-family: 'Lexend', sans-serif;
+    font-size: 40px;
 }
 
 /* Sommaire */
@@ -8,14 +41,19 @@ h1.titre{
     position: fixed;
     top: 0;
     left: 0;
-    height: 100%; /* Prend toute la hauteur de la fenêtre */
-    width: 200px; /* Largeur de la barre de sommaire */
+    width: 10%; /* Prend 10% de la largeur de la fenêtre */
+    height: 100%;
     background-color: #f0f0f0;
     padding: 10px;
     border-right: 1px solid #ccc;
-    overflow-y: auto; /* Ajoute une barre de défilement si nécessaire */
 }
 
+.etape {
+    margin-left: 10%; /* Laissant 10% pour la barre de sommaire */
+    padding: 20px;
+}
+
+/* Autres styles pour la barre de sommaire et les étapes */
 .sommaire ul {
     list-style-type: none;
     padding: 0;
@@ -32,4 +70,9 @@ h1.titre{
 
 .sommaire a:hover {
     color: #555;
+}
+
+
+.etape_1{
+    
 }
