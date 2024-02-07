@@ -3,64 +3,109 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <link rel="stylesheet" href="css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
         <title>Comment créer une recette !</title>
     </head>
     <body>
         <div class="sommaire">
-            <ul>
-                <li>
-                    <a href="#etape1">Étape 1</a>
-                </li>
-                <li>
-                    <a href="#etape2">Étape 2</a>
-                </li>
-                <li>
-                    <a href="#etape3">Étape 3</a>
-                </li>
-                <li>
-                    <a href="#etape4">Étape 4</a>
-                </li>
-                <li>
-                    <a href="#etape5">Étape 5</a>
-                </li>
-            </ul>
+            <h3>
+                <i class='bx bx-menu'></i>
+                Sommaire
+            </h3>
+            <a onclick="toggle(this, 'presentation')">
+                Présentation
+                <i class='bx bxs-left-arrow'></i>
+            </a>
+            <a onclick="toggle(this, 'etape1')">
+                Étape 1
+                <i class='bx bxs-left-arrow'></i>
+            </a>
+            <a onclick="toggle(this, 'etape2')">
+                Étape 2
+                <i class='bx bxs-left-arrow'></i>
+            </a>
+            <a onclick="toggle(this, 'etape3')">
+                Étape 3
+                <i class='bx bxs-left-arrow'></i>
+            </a>
+            <a onclick="toggle(this, 'etape4')">
+                Étape 4
+                <i class='bx bxs-left-arrow'></i>
+            </a>
+            <a onclick="toggle(this, 'etape5')">
+                Étape 5
+                <i class='bx bxs-left-arrow'></i>
+            </a>
         </div>
 
         <div class="main">
-            <h1>Comment créer une recette en 5 étapes</h1>
-            
-            <div class="etape">
-                <div class="presentation">
-                    <h2>Présentation du site</h2>
+            <div class="presentation">
+                <h1>Comment créer une recette en 5 étapes ?</h1>
+                <div class="content">
+                    <h2>Présentation du tutoriel</h2>
                     <p>Vous souhaitez partager vos talents de cuistot et partager votre sublime recette, ce tutoriel est fait pour vous !</p>
                 </div>
+            </div>
 
-                <div class="etape_1">
-                    <h2 id="etape1">Étape 1</h2>
-                    <p></p>
+            <div class="etape1">
+                <h1>Comment créer une recette en 5 étapes ?</h1>
+                <div class="content">
+                    <h2>
+                        Étape 
+                        <i class='bx bxs-dice-1'></i>
+                    </h2>
+                    <p>Contenu 1</p>
                 </div>
+            </div>
 
-                <div class="etape_2">
-                    <h2 id="etape2">Étape 2</h2>
-                    <p></p>
+            <div class="etape2">
+                <h1>Comment créer une recette en 5 étapes ?</h1>
+                <div class="content">
+                    <h2>
+                        Étape 
+                        <i class='bx bxs-dice-2'></i>
+                    </h2>
+                    <p>Contenu 2</p>
                 </div>
+            </div>
 
-                <div class="etape_3">
-                    <h2 id="etape3">Étape 3</h2>
-                    <p></p>
+            <div class="etape3">
+                <h1>Comment créer une recette en 5 étapes ?</h1>
+                <div class="content">
+                    <h2>
+                        Étape 
+                        <i class='bx bxs-dice-3'></i>
+                    </h2>
+                    <p>Contenu 3</p>
                 </div>
+            </div>
 
-                <div class="etape_4">
-                    <h2 id="etape4">Étape 4</h2>
-                    <p></p>
+            <div class="etape4">
+                <h1>Comment créer une recette en 5 étapes ?</h1>
+                <div class="content">
+                    <h2>
+                        Étape 
+                        <i class='bx bxs-dice-4'></i>
+                    </h2>
+                    <p>Contenu 4</p>
                 </div>
+            </div>
 
-                <div class="etape_5">
-                    <h2 id="etape5">Étape 5</h2>
-                    <p></p>
+            <div class="etape5">
+                <h1>Comment créer une recette en 5 étapes ?</h1>
+                <div class="content">
+                    <h2>
+                        Étape 
+                        <i class='bx bxs-dice-5'></i>
+                    </h2>
+                    <p>Contenu 5</p>
                 </div>
             </div>
         </div>
+
+        <script src="js/main.js"></script>
     </body>
 </html>
