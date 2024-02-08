@@ -1,3 +1,4 @@
+// Simulation du premier clic
 document.addEventListener("DOMContentLoaded", function() {
     var presentationLink = document.querySelector('.sommaire a:nth-of-type(1)');
     var presentationIcon = presentationLink.querySelector('i');
@@ -5,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     presentationLink.click();
 });
 
+// Affichage du contenu et de l'icone
 function toggle(clickedLink, section) {
     var icons = document.querySelectorAll('.sommaire a i');
     icons.forEach(icon => {
@@ -22,3 +24,15 @@ function toggle(clickedLink, section) {
     var selectedSection = document.querySelector('.' + section);
     selectedSection.style.display = 'block';
 }
+
+// Compteur de visiteurs
+let visitors = localStorage.getItem('visitorsCount');
+
+if (visitors === null) {
+    visitors = 0;
+}
+
+visitors = parseInt(visitors);
+visitors++;
+localStorage.setItem('visitorsCount', visitors);
+document.getElementById('visitorsCount').textContent = visitors;
