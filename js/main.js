@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // Affichage du contenu et de l'icone
-function toggle(clickedLink, section) {
+function togglePage(clickedLink, section) {
     var icons = document.querySelectorAll('.sommaire a i');
     icons.forEach(icon => {
         icon.style.display = 'none';
@@ -23,6 +23,37 @@ function toggle(clickedLink, section) {
 
     var selectedSection = document.querySelector('.' + section);
     selectedSection.style.display = 'block';
+}
+
+// Affichage du menu
+let isToggleMenu = false;
+function toggleMenu() {
+    isToggleMenu = !isToggleMenu;
+
+    var sommaire = document.querySelector('h3 > span');
+    var ancres = document.querySelectorAll('div.sommaire > a');
+    var menu = document.querySelector('div.sommaire');
+    var main = document.querySelector('div.main');
+    
+    if (!isToggleMenu) {
+        sommaire.style.display = 'block';
+
+        ancres.forEach(ancre => {
+            ancre.style.display = 'flex';
+        });
+
+        menu.style.width = '15%';
+        main.style.width = '85%';
+    } else {
+        sommaire.style.display = 'none';
+
+        ancres.forEach(ancre => {
+            ancre.style.display = 'none';
+        });
+
+        menu.style.width = '63px';
+        main.style.width = 'calc(100% - 63px)';
+    }
 }
 
 // Compteur de visiteurs

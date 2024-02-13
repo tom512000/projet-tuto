@@ -12,34 +12,34 @@
     <body>
         <div class="sommaire">
             <h3>
-                <i class='bx bx-menu'></i>
-                Sommaire
+                <i class='bx bx-menu' onclick="toggleMenu()"></i>
+                <span>Sommaire</span>
             </h3>
-            <a onclick="toggle(this, 'presentation')">
+            <a onclick="togglePage(this, 'presentation')">
                 Présentation
                 <i class='bx bxs-left-arrow'></i>
             </a>
-            <a onclick="toggle(this, 'etape1')">
+            <a onclick="togglePage(this, 'etape1')">
                 Étape 1
                 <i class='bx bxs-left-arrow'></i>
             </a>
-            <a onclick="toggle(this, 'etape2')">
+            <a onclick="togglePage(this, 'etape2')">
                 Étape 2
                 <i class='bx bxs-left-arrow'></i>
             </a>
-            <a onclick="toggle(this, 'etape3')">
+            <a onclick="togglePage(this, 'etape3')">
                 Étape 3
                 <i class='bx bxs-left-arrow'></i>
             </a>
-            <a onclick="toggle(this, 'etape4')">
+            <a onclick="togglePage(this, 'etape4')">
                 Étape 4
                 <i class='bx bxs-left-arrow'></i>
             </a>
-            <a onclick="toggle(this, 'etape5')">
+            <a onclick="togglePage(this, 'etape5')">
                 Étape 5
                 <i class='bx bxs-left-arrow'></i>
             </a>
-            <a onclick="toggle(this, 'propos')">
+            <a onclick="togglePage(this, 'propos')">
                 À propos
                 <i class='bx bxs-left-arrow'></i>
             </a>
@@ -135,7 +135,11 @@
                     </p>
 
                     <h2>À propos de ce tutoriel</h2>
-                    <p>Ce tutoriel a été écrit par <strong>Louis RATTANAVONG</strong> et <strong>Tom SIKORA</strong>, deux étudiants en BUT Informatique à l'IUT Reims-Châlons-Charleville. Il a été réalisé dans le cadre des TP3 et TP4 de la matière Communication interne TP (R4.06). Ce tutoriel a été consulté <strong><span id="visitorsCount">0</span> fois</strong>.</p>
+                    <p>Ce tutoriel a été écrit par <strong>Louis RATTANAVONG</strong> et <strong>Tom SIKORA</strong>, deux étudiants en BUT Informatique à l'IUT Reims-Châlons-Charleville. Il a été réalisé dans le cadre des TP3 et TP4 de la matière Communication interne TP (R4.06).</p>
+                    <div class="ligne"></div>
+                    <p>Catégorie: <strong>Cuisine</strong></p>
+                    <div class="ligne"></div>
+                    <p class="stats">Ce tutoriel a été consulté&nbsp;<strong><span id="visitorsCount">0</span> fois</strong>.</p>
                 </div>
             </div>
         </div>
