@@ -99,7 +99,13 @@ function toggleMenu() {
 }
 
 // Compteur de visiteurs
-visitors = parseInt(localStorage.getItem('visitorsCount'));
+let visitors = localStorage.getItem('visitorsCount');
+
+if (visitors === null) {
+    visitors = 0;
+}
+
+visitors = parseInt(visitors);
 visitors++;
 localStorage.setItem('visitorsCount', visitors);
 document.getElementById('visitorsCount').textContent = visitors;
