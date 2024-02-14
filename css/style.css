@@ -86,7 +86,7 @@ div.main > div {
     width: 100%;
 }
 
-div.main > div > h1 {
+div.main h1 {
     text-align: center;
     font-family: 'Lexend', sans-serif;
     font-size: 37px;
