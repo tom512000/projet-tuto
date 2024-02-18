@@ -54,14 +54,14 @@ function toggleMenu() {
         body.style.height = '100%';
         
         /* Sommaire */
-        menu.style.width = '15%';
+        menu.style.width = '20%';
         sommaire.style.display = 'block';
         ancres.forEach(ancre => {
             ancre.style.display = 'flex';
         });
 
         /* Contenu */
-        main.style.width = '85%';
+        main.style.width = '80%';
         content.forEach(partie => {
             mainPage = localStorage.getItem('mainPage');
             partie.querySelector('h1').style.display = 'block';
