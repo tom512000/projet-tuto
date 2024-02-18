@@ -95,8 +95,8 @@ div.main h1 {
 div.content {
     display: flex;
     flex-direction: column;
-    width: calc(100% - 80px);
-    padding: 0 40px 0 40px;
+    width: calc(100% - 200px);
+    padding: 0 100px 0 100px;
 }
 
 div.content > h2 {
@@ -108,10 +108,6 @@ div.content > h2 {
 
 div.content > h2 > i {
     margin-left: 10px;
-}
-
-div.content  h3 {
-    font-family: 'Poppins', sans-serif;
 }
 
 div.content > p {
