@@ -110,6 +110,10 @@ div.content > h2 > i {
     margin-left: 10px;
 }
 
+div.content  h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
 div.content > p {
     line-height: 20px;
     text-align: justify;
@@ -146,6 +150,15 @@ p.stats {
     font-size: 20px;
 }
 
-img {
-    width: 50%;
+div.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+}
+
+div.video > video {
+    width: 70%;
+    height: 100%;
 }
