@@ -151,6 +151,25 @@ p.stats {
     font-size: 20px;
 }
 
+/* Bloc d'image/texte */
+div.bloc {
+    display: flex;
+    width: 100%;
+}
+
+div.bloc > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 20px 0 20px 0;
+}
+
+div.bloc > div > img {
+    width: 80%;
+    border-radius: 10px;
+}
+
 div.video {
     display: flex;
     justify-content: center;

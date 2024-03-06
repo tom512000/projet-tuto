@@ -34,9 +34,6 @@ let isToggleMenu = false;
 function toggleMenu() {
     isToggleMenu = !isToggleMenu;
 
-    var html = document.querySelector('html');
-    var body = document.querySelector('body');
-
     /* Sommaire */
     var menu = document.querySelector('div.sommaire');
     var sommaire = document.querySelector('h3 > span');
@@ -46,13 +43,7 @@ function toggleMenu() {
     var main = document.querySelector('div.main');
     var content = document.querySelectorAll('div.main > div');
     
-    /* Titre main */
-    var title = document.querySelector('div.main > h1');
-    
     if (!isToggleMenu) {
-        html.style.height = '100%';
-        body.style.height = '100%';
-        
         /* Sommaire */
         menu.style.width = '20%';
         sommaire.style.display = 'block';
@@ -62,22 +53,7 @@ function toggleMenu() {
 
         /* Contenu */
         main.style.width = '80%';
-        content.forEach(partie => {
-            mainPage = localStorage.getItem('mainPage');
-            partie.querySelector('h1').style.display = 'block';
-            if (partie.className == mainPage) {
-                partie.style.display = 'flex'
-            } else {
-                partie.style.display = 'none';
-            }
-        });
-
-        /* Titre main */
-        title.style.display = 'none';
     } else {
-        html.style.height = 'auto';
-        body.style.height = 'auto';
-
         /* Sommaire */
         menu.style.width = '63px';
         sommaire.style.display = 'none';
@@ -87,14 +63,6 @@ function toggleMenu() {
 
         /* Contenu */
         main.style.width = 'calc(100% - 63px)';
-        content.forEach(partie => {
-            partie.style.display = 'flex';
-            partie.style.flexDirection = 'column';
-            partie.querySelector('h1').style.display = 'none';
-        });
-
-        /* Titre main */
-        title.style.display = 'block';
     }
 }
 
