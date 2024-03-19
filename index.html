@@ -58,6 +58,12 @@
                             <source src="video/global.mp4" type="video/webm" />
                         </video>
                     </div>
+                    <div class="pagination">
+                        <a onclick="togglePage(document.querySelector('div.sommaire > a:nth-child(3)'), 'etape1')">
+                            <span>&nbsp; <strong>Étape 1</strong></span>
+                            <i class='bx bxs-chevron-right'></i>
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -75,12 +81,12 @@
                             <img src="img/etape1-1.boutonConnexion.png" alt="Bouton de connexion">
                         </div>
                         <div>
-                            <p></p>
+                            <p>Pour commencer, cliquez sur le <strong>bouton &laquo; Connexion &raquo;</strong> pour accéder à l'<strong>écran de connexion</strong> à votre compte.</p>
                         </div>
                     </div>
                     <div class="bloc">
                         <div>
-                            <p></p>
+                            <p>Insérez votre <strong>identifiant</strong> dans la zone de texte en dessous du <strong>titre &laquo; Login &raquo;</strong>.</p>
                         </div>
                         <div>
                             <img src="img/etape1-2.Entrezlogin.png" alt="Ajout du login">
@@ -91,16 +97,26 @@
                             <img src="img/etape1-3.Entrezmdp.png" alt="Ajout du mot de passe">
                         </div>
                         <div>
-                            <p></p>
+                            <p>Saisissez votre <strong>mot de passe</strong> dans la zone de texte en dessous du <strong>titre &laquo; Password &raquo;</strong>.</p>
                         </div>
                     </div>
                     <div class="bloc">
                         <div>
-                            <p></p>
+                            <p>Cliquez sur le <strong>bouton &laquo; Sign in &raquo;</strong> lorsque toutes les informations nécessaires sont <strong>inscrites</strong>.</p>
                         </div>
                         <div>
                             <img src="img/etape1-4.finPret.png" alt="Accès à l'ajout d'une recette">
                         </div>
+                    </div>
+                    <div class="pagination">
+                        <a onclick="togglePage(document.querySelector('div.sommaire > a:nth-child(2)'), 'presentation')">
+                            <i class='bx bxs-chevron-left'></i>
+                            <span>&nbsp; <strong>Page de présentation</strong></span>
+                        </a>
+                        <a onclick="togglePage(document.querySelector('div.sommaire > a:nth-child(4)'), 'etape2')">
+                            <span>&nbsp; <strong>Étape 2</strong></span>
+                            <i class='bx bxs-chevron-right'></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -117,67 +133,77 @@
                     <p> Nous détaillerons les composantes importantes d'une recette réussie, soulignant que <strong>chaque détail compte</strong>. Suivez notre guide à travers chaque aspect de la <strong>création de votre recette</strong>.</p>
                     <div class="bloc">
                         <div>
-                            <img src="img/etape2-1.creerRecette.png" alt="">
+                            <img src="img/etape2-1.creerRecette.png" alt="Création de la recette">
                         </div>
                         <div>
-                            <p></p>
+                            <p>Cliquez sur le <strong>bouton &laquo; Créer une nouvelle recette &raquo;</strong> pour commencer la création.</p>
                         </div>
                     </div>
                     <div class="bloc">
                         <div>
-                            <p></p>
+                            <p>Entrez le <strong>nom de votre recette</strong> dans la zone de texte en dessous du <strong>titre &laquo; Nom recette &raquo;</strong>.</p>
                         </div>
                         <div>
-                            <img src="img/etape2-2.insererNomRec.png" alt="">
+                            <img src="img/etape2-2.insererNomRec.png" alt="Insertion du nom de la recette">
                         </div>
                     </div>
                     <div class="bloc">
                         <div>
-                            <img src="img/etape2-3.siVousSouhaitezInserImg.png" alt="">
+                            <img src="img/etape2-3.siVousSouhaitezInserImg.png" alt="Insertion d'une image pour la recette">
                         </div>
                         <div>
-                            <p></p>
+                            <p>Si vous souhaitez <strong>ajouter une image</strong> à votre recette, cliquez sur le <strong>bouton &laquo; Choisir un fichier &raquo;</strong>.</p>
                         </div>
                     </div>
                     <div class="bloc">
                         <div>
-                            <p></p>
+                            <p>Sélectionnez une image au <strong>format JPG</strong>.</p>
                         </div>
                         <div>
-                            <img src="img/etape2-4.SelecImgPng.png" alt="">
+                            <img src="img/etape2-4.SelecImgPng.png" alt="Sélection d'une image au format JPG">
                         </div>
                     </div>
                     <div class="bloc">
                         <div>
-                            <img src="img/etape2-5.nbrCaloriesRec.png" alt="">
+                            <img src="img/etape2-5.nbrCaloriesRec.png" alt="Sélection du nombre de calories">
                         </div>
                         <div>
-                            <p></p>
+                            <p>Indiquez le <strong>nombre de calories</strong> de votre recette dans la zone de texte en dessous du <strong>titre &laquo; Calories &raquo;</strong>.</p>
                         </div>
                     </div>
                     <div class="bloc">
                         <div>
-                            <p></p>
+                            <p>Sélectionnez ensuite les <strong>ingrédients nécessaires</strong> à votre recette parmi la liste visible après le <strong>titre &laquo; Ingrédients &raquo;</strong>.</p>
                         </div>
                         <div>
-                            <img src="img/etape2-6.SelectIngredNess.png" alt="">
+                            <img src="img/etape2-6.SelectIngredNess.png" alt="Sélection des ingrédient nécessaires">
                         </div>
                     </div>
                     <div class="bloc">
                         <div>
-                            <img src="img/etape2-7.InserEtape.png" alt="">
+                            <img src="img/etape2-7.InserEtape.png" alt="Ajout de la description de la recette">
                         </div>
                         <div>
-                            <p></p>
+                            <p>Si vous le désirez, insérez les <strong>étapes de préparation</strong> de votre recette ou <strong>tout autres informations</strong> dans la zone de texte en dessous du <strong>titre &laquo; Description &raquo;</strong>.</p>
                         </div>
                     </div>
                     <div class="bloc">
                         <div>
-                            <p></p>
+                            <p>Cliquez sur ce <strong>bouton &laquo; Sauvegarder &raquo;</strong> pour finaliser la <strong>création de votre recette</strong>.</p>
                         </div>
                         <div>
-                            <img src="img/etape2-8.FinRecCréer.png" alt="">
+                            <img src="img/etape2-8.FinRecCréer.png" alt="Fin de la création de la recette">
                         </div>
+                    </div>
+                    <div class="pagination">
+                        <a onclick="togglePage(document.querySelector('div.sommaire > a:nth-child(3)'), 'etape1')">
+                            <i class='bx bxs-chevron-left'></i>
+                            <span>&nbsp; <strong>Étape 1</strong></span>
+                        </a>
+                        <a onclick="togglePage(document.querySelector('div.sommaire > a:nth-child(5)'), 'etape3')">
+                            <span>&nbsp; <strong>Étape 3</strong></span>
+                            <i class='bx bxs-chevron-right'></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -190,12 +216,73 @@
                         <i class='bx bxs-dice-3'></i>
                         &nbsp;- Modifier une recette
                     </h2>
-                    <p>Une fois votre recette créée, vous accédez à <strong>deux options supplémentaires</strong> : <strong>modification</strong> et <strong>suppression</strong>. Nous nous concentrerons d'abord sur la <strong>modification</strong>. Cette section <strong>détaille</strong> comment la fonction de modification peut <strong>transformer votre recette</strong> en un chef-d'œuvre gastronomique.</p>
+                    <p>Une fois votre recette créée, vous accédez à <strong>deux options supplémentaires</strong> : <strong>modification</strong> et <strong>suppression</strong>. Nous nous concentrerons d'abord sur la <strong>modification</strong>.</p>
                     <p>Préparez-vous à explorer les <strong>possibilités</strong> de <strong>personnalisation</strong> et d'<strong>amélioration de vos recettes</strong>.</p>
-                    <div class="video">
-                        <video controls width="250">
-                            <source src="video/Modif.mp4" type="video/webm" />
-                        </video>
+                    <div class="bloc">
+                        <div>
+                            <img src="img/etape3-1.ClickIconModif.png" alt="Bouton de modification">
+                        </div>
+                        <div>
+                            <p>Cliquez sur le <strong>bouton &laquo; Recettes &raquo;</strong> puis recherchez dans la liste votre recette précédemment créée. Ensuite, cliquez sur l'<strong>icone de modification</strong> de la recette.</p>
+                        </div>
+                    </div>
+                    <div class="bloc">
+                        <div>
+                            <p>Selon vos besoins, <strong>modifiez le nom</strong> de votre recette dans la zone de texte en dessous du <strong>titre &laquo; Nom recette &raquo;</strong>.</p>
+                        </div>
+                        <div>
+                            <img src="img/etape3-2.ModifNom.png" alt="Modification du nom">
+                        </div>
+                    </div>
+                    <div class="bloc">
+                        <div>
+                            <img src="img/etape3-3.SupprImage.png" alt="Suppression de l'image">
+                        </div>
+                        <div>
+                            <p>Si nécessaire, <strong>supprimez l'image</strong> de votre recette en cliquant sur la <strong>case à cocher</strong> en dessous de cette image.</p>
+                        </div>
+                    </div>
+                    <div class="bloc">
+                        <div>
+                            <p>Ensuite, modifiez le <strong>nombre de calories</strong> de votre recette dans la zone de texte en dessous du <strong>titre &laquo; Calories &raquo;</strong>.</p>
+                        </div>
+                        <div>
+                            <img src="img/etape3-4.ModifCalor.png" alt="Modification des calories">
+                        </div>
+                    </div>
+                    <div class="bloc">
+                        <div>
+                            <img src="img/etape3-5.AddSupprIngred.png" alt="Ajout et suppression d'ingrédient">
+                        </div>
+                        <div>
+                            <p>Ajoutez ou supprimez les <strong>ingrédients</strong> que vous voulez dans la liste après le <strong>titre &laquo; Ingrédients &raquo;</strong>.</p>
+                        </div>
+                    </div>
+                    <div class="bloc">
+                        <div>
+                            <p>Modifiez la <strong>description</strong> de votre recette selon vos préférences dans la zone de texte en dessous du <strong>titre &laquo; Description &raquo;</strong>.</p>
+                        </div>
+                        <div>
+                            <img src="img/etape3-6.ModifDesc.png" alt="Modification de la desceiption">
+                        </div>
+                    </div>
+                    <div class="bloc">
+                        <div>
+                            <img src="img/etape3-7.FinModif.png" alt="Fin de la modification">
+                        </div>
+                        <div>
+                            <p>Une fois les modifications effectuées, cliquez sur le <strong>bouton &laquo; Sauvegarder &raquo;</strong> pour <strong>finaliser la modification</strong>.</p>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <a onclick="togglePage(document.querySelector('div.sommaire > a:nth-child(4)'), 'etape2')">
+                            <i class='bx bxs-chevron-left'></i>
+                            <span>&nbsp; <strong>Étape 2</strong></span>
+                        </a>
+                        <a onclick="togglePage(document.querySelector('div.sommaire > a:nth-child(6)'), 'etape4')">
+                            <span>&nbsp; <strong>Étape 4</strong></span>
+                            <i class='bx bxs-chevron-right'></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -209,10 +296,39 @@
                         &nbsp;- Supprimer une recette
                     </h2>
                     <p>Si votre recette <strong>vous correspond</strong> cette étape ne vous concerne pas, sinon voici comment <strong>supprimer une recette</strong> :</p>
-                    <div class="video">
-                        <video controls width="250">
-                            <source src="video/Supprimer.mp4" type="video/webm" />
-                        </video>
+                    <div class="bloc">
+                        <div>
+                            <img src="img/etape4-1.ClickIconSupp.png" alt="Bouton de suppression">
+                        </div>
+                        <div>
+                            <p>Cliquez sur le <strong>bouton &laquo; Recettes &raquo;</strong> puis recherchez dans la liste votre recette précédemment modifiée. Ensuite, cliquez sur l'<strong>icone de suppression de la recette</strong>.</p>
+                        </div>
+                    </div>
+                    <div class="bloc">
+                        <div>
+                            <p>Ensuite, <strong>confirmez la suppression</strong> de cette recette en cliquant sur le <strong>bouton &laquo; Supprimer &raquo;</strong>.</p>
+                        </div>
+                        <div>
+                            <img src="img/etape4-2.SureDeSuppr.png" alt="Suppression de la recette">
+                        </div>
+                    </div>
+                    <div class="bloc">
+                        <div>
+                            <img src="img/etape4-3.RecSupprFin.png" alt="Fin de la suppression">
+                        </div>
+                        <div>
+                            <p>Une fois confirmé, la recette sera <strong>définitivement supprimée</strong>.</p>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <a onclick="togglePage(document.querySelector('div.sommaire > a:nth-child(5)'), 'etape3')">
+                            <i class='bx bxs-chevron-left'></i>
+                            <span>&nbsp; <strong>Étape 3</strong></span>
+                        </a>
+                        <a onclick="togglePage(document.querySelector('div.sommaire > a:nth-child(7)'), 'propos')">
+                            <span>&nbsp; <strong>À propos de ce tutoriel</strong></span>
+                            <i class='bx bxs-chevron-right'></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -248,6 +364,12 @@
                     <p>Catégorie: <strong>Cuisine</strong></p>
                     <div class="ligne"></div>
                     <p class="stats">Ce tutoriel a été consulté&nbsp;<strong><span id="visitorsCount">0</span> fois</strong>.</p>
+                </div>
+                <div class="pagination">
+                    <a onclick="togglePage(document.querySelector('div.sommaire > a:nth-child(6)'), 'etape4')">
+                        <i class='bx bxs-chevron-left'></i>
+                        <span>&nbsp; <strong>Étape 4</strong></span>
+                    </a>
                 </div>
             </div>
         </div>

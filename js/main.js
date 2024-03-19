@@ -10,6 +10,7 @@ localStorage.setItem('mainPage', 'presentation');
 
 // Affichage du contenu et de l'icone
 function togglePage(clickedLink, section) {
+    window.scrollTo(0, 0);
     var icons = document.querySelectorAll('.sommaire a i');
     icons.forEach(icon => {
         icon.style.display = 'none';
@@ -41,18 +42,17 @@ function toggleMenu() {
     
     /* Contenu */
     var main = document.querySelector('div.main');
-    var content = document.querySelectorAll('div.main > div');
     
     if (!isToggleMenu) {
         /* Sommaire */
-        menu.style.width = '20%';
+        menu.style.width = '15%';
         sommaire.style.display = 'block';
         ancres.forEach(ancre => {
             ancre.style.display = 'flex';
         });
 
         /* Contenu */
-        main.style.width = '80%';
+        main.style.width = '85%';
     } else {
         /* Sommaire */
         menu.style.width = '63px';
